@@ -4,4 +4,3 @@ pytest==3.3.2
 whitenoise==1.0.6
 waitress==0.8.9
 psycopg2==2.5.4
-django-oauth-toolkit==1.0.0

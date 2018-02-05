@@ -5,20 +5,13 @@
 #    pip-compile --output-file requirements.txt requirements.in
 #
 attrs==17.4.0             # via pytest
-certifi==2018.1.18        # via requests
-chardet==3.0.4            # via requests
 django-environ==0.4.4
-django-oauth-toolkit==1.0.0
 django==2.0.1
-idna==2.6                 # via requests
-oauthlib==2.0.6           # via django-oauth-toolkit
 pluggy==0.6.0             # via pytest
 psycopg2==2.5.4
 py==1.5.2                 # via pytest
 pytest==3.3.2
 pytz==2017.3              # via django
-requests==2.18.4          # via django-oauth-toolkit
 six==1.11.0               # via django-environ, pytest
-urllib3==1.22             # via requests
 waitress==0.8.9
 whitenoise==1.0.6
