@@ -14,5 +14,4 @@ py==1.5.2                 # via pytest
 pytest==3.3.2
 pytz==2017.3              # via django
 six==1.11.0               # via django-environ, pytest
-waitress==0.8.9
 whitenoise==1.0.6
