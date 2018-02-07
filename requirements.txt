@@ -7,6 +7,9 @@
 attrs==17.4.0             # via pytest
 django-environ==0.4.4
 django==2.0.1
+gevent==1.2.2
+greenlet==0.4.13          # via gevent
+gunicorn==19.7.1
 pluggy==0.6.0             # via pytest
 psycopg2==2.5.4
 py==1.5.2                 # via pytest
