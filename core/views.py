@@ -1,30 +1,19 @@
 import logging
 
 import requests
+from allauth.account.decorators import login_required
 from django.conf import settings
-from django.shortcuts import render, redirect
 from django.contrib import auth
+from django.shortcuts import render, redirect
 
 logger = logging.getLogger(__name__)
 
 SESSION_KEY_ACCESS_TOKEN = 'access_token'
 
 
+@login_required
 def index(request):
-    current_profile_as_json = __get_current_profile_as_json(request)
-    if current_profile_as_json:
-        email = current_profile_as_json['email']
-        first_name = current_profile_as_json['first_name']
-        last_name = current_profile_as_json['last_name']
-        return render(request, 'index.html',
-                      {
-                          'first_name': first_name,
-                          'last_name': last_name,
-                          'email': email
-                      })
-    else:
-        return __redirect_to_sso_provider(request)
-
+    return render(request, 'index.html')
 
 def when_authorised_from_sso_provider(request):
     access_code = request.GET.get('code')

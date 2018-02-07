@@ -5,13 +5,23 @@
 #    pip-compile --output-file requirements.txt requirements.in
 #
 attrs==17.4.0             # via pytest
+certifi==2018.1.18        # via requests
+chardet==3.0.4            # via requests
+defusedxml==0.5.0         # via python3-openid
+django-allauth==0.35.0
 django-environ==0.4.4
 django==2.0.1
 gunicorn==19.7.1
+idna==2.6                 # via requests
+oauthlib==2.0.6           # via requests-oauthlib
 pluggy==0.6.0             # via pytest
 psycopg2==2.5.4
 py==1.5.2                 # via pytest
 pytest==3.3.2
+python3-openid==3.1.0     # via django-allauth
 pytz==2017.3              # via django
+requests-oauthlib==0.8.0  # via django-allauth
+requests==2.18.4          # via django-allauth, requests-oauthlib
 six==1.11.0               # via django-environ, pytest
+urllib3==1.22             # via requests
 whitenoise==1.0.6
