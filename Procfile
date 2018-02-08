@@ -1,1 +1,1 @@
-web: python manage.py migrate && waitress-serve --port=$PORT conf.wsgi:application
+web: python manage.py migrate && gunicorn conf.wsgi --config conf/gunicorn.py
