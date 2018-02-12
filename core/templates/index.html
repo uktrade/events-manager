@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Events Manager</title>
-</head>
-<body>
-<div class="container">
+{% extends "base.html" %}
+
+{% block content %}
     <p>First Name: {{ first_name }}</p>
     <p>Last Name: {{ last_name }}</p>
     <p>Email: {{ email }}</p>
 
      <br/>
-     <a href="{% url 'logout' %}">Sign out</a>
-
-</div>
-</body>
-</html>
+{% endblock %}

@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sass_processor',
 )
 
 MIDDLEWARE = (
@@ -97,6 +98,16 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'core', 'static'),
+    os.path.join(BASE_DIR, 'core', 'static', 'scss'),
+]
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
+]
 
 # Staff SSO Related
 ##################################################################
@@ -126,3 +137,12 @@ LOGGING = {
         }
     },
 }
+
+SASS_PROCESSOR_INCLUDE_DIRS = [
+    os.path.join(PROJECT_ROOT, 'node_modules/govuk_frontend_toolkit/stylesheets'),
+    os.path.join(PROJECT_ROOT, 'core/static/scss'),
+]
+
+SASS_PROCESSOR_AUTO_INCLUDE = True
+
+SASS_PROCESSOR_ROOT = STATIC_ROOT

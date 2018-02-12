@@ -1,6 +1,9 @@
-django-environ==0.4.4
 django==2.0.1
+django-compressor==2.2
+django-environ==0.4.4
+django-sass-processor==0.5.8
 gunicorn==19.7.1
+libsass==0.13.7
 psycopg2==2.5.4
 pytest==3.3.2
 whitenoise==1.0.6

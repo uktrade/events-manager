@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "../../Users/whitehall/Work/events-manager/core/static/scss/main.css",
+	"sources": [
+		"../../Users/whitehall/Work/events-manager/core/static/scss/main.scss",
+		"../../Users/whitehall/Work/events-manager/node_modules/govuk_frontend_toolkit/stylesheets/_conditionals.scss",
+		"../../Users/whitehall/Work/events-manager/node_modules/govuk_frontend_toolkit/stylesheets/_typography.scss",
+		"../../Users/whitehall/Work/events-manager/node_modules/govuk_frontend_toolkit/stylesheets/_font_stack.scss",
+		"../../Users/whitehall/Work/events-manager/node_modules/govuk_frontend_toolkit/stylesheets/_device-pixels.scss",
+		"../../Users/whitehall/Work/events-manager/node_modules/govuk_frontend_toolkit/stylesheets/_url-helpers.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

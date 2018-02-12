@@ -1,0 +1,48 @@
+{% load sass_tags %}
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{% sass_src 'main.scss' %}" rel="stylesheet" type="text/css"/>
+    <title>Events manager</title>
+</head>
+<body>
+
+<header>
+    <div>
+        <div>
+            <div>
+                <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" id="logo" class="content">
+                    <img src="{% static 'images/crown.png' %}"> GOV.UK
+                </a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <nav>
+                    Manage events
+                    <ul>
+                        <li><a href="{% url 'logout' %}">Sign out</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<div>
+    {% block content %}
+    {% endblock content %}
+</div>
+
+</body>
+</html>
+
+
+
+
